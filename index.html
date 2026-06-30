@@ -1,8 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en-GB">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <!-- Tag essencial para responsividade em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Millena Miranda Franco</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,20 +15,27 @@
   <link rel="icon" href="profilbild.png" />
   
   <style type="text/css">
+    /* Reset básico para garantir que margens não quebrem o layout */
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-size: 12pt;
       font-family: "Source Sans Pro", sans-serif; 
       background-color: #ffffff; 
       color: #000000; 
       text-align: left;
-      text-transform: none;
       line-height: 26px;
+      margin: 0;
+      padding: 0;
     }
     
     a {
       color: #d73300; 
       text-decoration: none;
     }
+    
     a:hover {
       text-decoration: underline;
     }
@@ -40,7 +50,6 @@
       font-size: 14px;
       margin-top: 40px;
       padding-bottom: 5px;
-      border-bottom: none; 
       line-height: 1.6;
     }
     
@@ -49,7 +58,6 @@
       font-size: 30px; 
       font-weight: normal;
       margin: 0;
-      text-align: left;
       color: #2a1c0f;
       letter-spacing: -1px; 
     }
@@ -63,157 +71,188 @@
     }
     
     h3 {
-      font-weight: normal;
       font-size: 11pt;
       margin-left: 80px;
     }
 
     ol {
       margin-bottom: 30px;
+      margin-left: 40px;
     }
+    
     li {
       margin-bottom: 10px;
+    }
+
+    /* O container substitui a tabela fixa */
+    .container {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px; /* Garante que o texto não cole nas bordas no celular */
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .header-section img {
+      max-width: 140px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .separator {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .separator img {
+      height: 25px;
+      width: auto;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 11pt;
+    }
+
+    /* Regras específicas para telas menores (celulares) */
+    @media (max-width: 600px) {
+      .header-section {
+        flex-direction: column; /* Empilha a foto e o nome */
+        text-align: center;
+        gap: 15px;
+      }
+      
+      h6 {
+        font-size: 20px; /* Reduz o tamanho do título para caber na tela */
+        white-space: normal;
+      }
+      
+      ol {
+        margin-left: 20px; /* Reduz o recuo das listas no celular */
+        padding-left: 15px;
+      }
+      
+      img {
+        max-width: 100%; /* Garante que nenhuma imagem vaze da tela */
+      }
     }
   </style>
 </head>
 
 <body>
-  <div style="text-align: center;"><span style="font-weight: bold;"></span></div>
-  <br>
+  <div class="container">
+    <div class="header-section">
+      <img src="profilbild.png" alt="Millena Miranda Franco">
+      <h6>Millena Miranda Franco</h6>
+    </div>
+    
+    <div class="separator">
+      <img src="3.png" alt="Separator">
+    </div>
+    
+    <p>I am a PhD candidate in Education at the <a href="https://www4.fe.usp.br/" target="_blank">University of São Paulo (USP)</a>, focusing on the history and historiography of education. My research explores the intersection of education and state violence, specifically investigating the political uses of adult literacy, educational initiatives as forms of resistance, and the memory narratives of survivors of the Brazilian civil-military dictatorship. Furthermore, my work extensively involves archival science, with a strong emphasis on the preservation and curation of both physical and digital historical collections. I hold an MA in Education (2024), a Specialisation in Social Pedagogy (2023), and a BA in Pedagogy (2021) from USP, where I am also currently undertaking undergraduate studies in Law.</p>
+    
+    <p>Presently, I am a Visiting Researcher at the São Paulo Law School of <a href="https://direitosp.fgv.br/" target="_blank">Fundação Getulio Vargas (FGV Direito SP)</a>, supported by a <a href="https://bv.fapesp.br/pt/bolsas/230753/organizacao-e-disponibilizacao-publica-de-acervo-documental-envolvendo-violencia-de-estado/" target="_blank">FAPESP grant</a> to organise and make publicly available documentary archives involving state violence. Between 2019 and 2022, I acted as Pedagogical and Diversity Coordinator at Instituto IRIS, and I have been a Volunteer Researcher at <a href="https://cme-feusp.wixsite.com/site" target="_blank">USP's Memory Centre of Education</a> since 2017.</p>
+    
+    <p>You can download my full <a href="PDFs/CurriculumVitae.pdf" target="_blank">CV and list of publications</a>.</p>
 
-  <table style="text-align: left; width: 900px; margin-left: auto; margin-right: auto;" border="0"
-    cellpadding="2" cellspacing="2">
-    <tbody>
-      <tr align="center">
-        <td style="vertical-align: top;"><br>
-        </td>
-      </tr>
-      <tr>
-        <td style="vertical-align: top;">
-          <div style="text-align: center;"> </div>
-          
-          <div style="display: flex; align-items: center; justify-content: flex-start; gap: 30px; margin-top: 20px; margin-bottom: 20px; width: 100%;">
-            <img src="profilbild.png" alt="Millena Miranda Franco" style="max-width: 140px; height: auto; flex-shrink: 0;">
-            <h6 style="white-space: nowrap;">Millena Miranda Franco</h6>
-          </div>
-          
-          <div style="text-align: center; margin: 30px 0;">
-            <img src="3.png" alt="Separator" style="height: 25px; width: auto;">
-          </div>
-          
-          <p style="text-align: left;">I am a PhD candidate in Education at the <a href="https://www4.fe.usp.br/" target="_blank">University of São Paulo (USP)</a>, focusing on the history and historiography of education. My research explores the intersection of education and state violence, specifically investigating the political uses of adult literacy, educational initiatives as forms of resistance, and the memory narratives of survivors of the Brazilian civil-military dictatorship. Furthermore, my work extensively involves archival science, with a strong emphasis on the preservation and curation of both physical and digital historical collections. I hold an MA in Education (2024), a Specialisation in Social Pedagogy (2023), and a BA in Pedagogy (2021) from USP, where I am also currently undertaking undergraduate studies in Law.</p>
-          <p style="text-align: left;">Presently, I am a Visiting Researcher at the São Paulo Law School of <a href="https://direitosp.fgv.br/" target="_blank">Fundação Getulio Vargas (FGV Direito SP)</a>, supported by a <a href="https://bv.fapesp.br/pt/bolsas/230753/organizacao-e-disponibilizacao-publica-de-acervo-documental-envolvendo-violencia-de-estado/" target="_blank">FAPESP grant</a> to organise and make publicly available documentary archives involving state violence. Between 2019 and 2022, I acted as Pedagogical and Diversity Coordinator at Instituto IRIS, and I have been a Volunteer Researcher at <a href="https://cme-feusp.wixsite.com/site" target="_blank">USP's Memory Centre of Education</a> since 2017.</p>
-          
-          <p>You can download my full <a href="PDFs/CurriculumVitae.pdf" target="_blank">CV and list of publications</a>.</p>
+    <p>See also my 
+    <a id="cy-effective-orcid-url" class="underline" href="https://orcid.org/0000-0002-0292-0797" target="_blank" rel="me noopener noreferrer">
+    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width: 1em; margin-inline-start: 0.5em; vertical-align: middle;" alt="ORCID iD icon"/> ORCiD</a>.</p>
 
-          <p>See also my 
-          <a
-          id="cy-effective-orcid-url"
-          class="underline"
-          href="https://orcid.org/0000-0002-0292-0797"
-          target="_blank"
-          rel="me noopener noreferrer"
-          style="vertical-align: top">
-          <img
-              src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-              style="width: 1em; margin-inline-start: 0.5em"
-              alt="ORCID iD icon"/>
-          ORCiD</a>.</p>
+    <h5>Publications</h5>         
+    
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Books and Monographs</h2>
+    <ol>
+      <li>Franco, M. M. (2026). <span style="font-style: italic;">Comparing the implementation of projects for Citizenship Education in Evening Vocational Schools for Youth and Adult Workers (1968-9)</span> (1st ed.). São Paulo: Millena Miranda Franco.</li>
+      <li>Franco, M. M. (2024). <a href="https://doi.org/10.11606/D.48.2024.tde-25112024-105915" target="_blank"><span style="font-style: italic;">Comparing the implementation of projects for Citizenship Education in Evening Vocational Schools for Youth and Adult Workers (1968-9)</span></a> [Master's thesis/Monograph]. University of São Paulo, School of Education.</li>
+    </ol>
 
-          <h5>Publications</h5>          
-          
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Books and Monographs</h2>
-          <ol style="margin-left: 40px;">
-            <li>Franco, M. M. (2026). <span style="font-style: italic;">Comparing the implementation of projects for Citizenship Education in Evening Vocational Schools for Youth and Adult Workers (1968-9)</span> (1st ed.). São Paulo: Millena Miranda Franco.</li>
-            <li>Franco, M. M. (2024). <a href="https://doi.org/10.11606/D.48.2024.tde-25112024-105915" target="_blank"><span style="font-style: italic;">Comparing the implementation of projects for Citizenship Education in Evening Vocational Schools for Youth and Adult Workers (1968-9)</span></a> [Master's thesis/Monograph]. University of São Paulo, School of Education.</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Book Chapters</h2>
+    <ol>
+      <li>Franco, M. M. (2024). Diálogo entre sombras. In Vários Autores (Ed.), <span style="font-style: italic;">O Livro Franciscano</span> (1st ed., pp. 49-50). Letras Amigas.</li>
+      <li>Franco, M. M., & Silva, L. S. (2021). Capítulo 15 - Os Conselhos Municipais de Direitos da Criança e do Adolescente no Brasil. In R. da Silva (Ed.), <span style="font-style: italic;">ECA 31 anos: nem a Pandemia nem o ódio podem matar nossos sonhos</span> (1st ed., pp. 131-144). Simplissimo.</li>
+      <li>Franco, M. M., Paiva, B. M., Osteti, G. R., Silva, N. R. P. da, Silva, B. H., Osteti, G. R., & Costa, P. S. R. (2021). As aproximações da pedagogia transformadora de Paulo Freire com a práxis coletiva de revista estudantil, comunitária e democrática. In C. C. Hardagh & L. Gamez (Eds.), <span style="font-style: italic;">Paulo Freire e a práxis pedagógica na contemporaneidade</span> (1st ed., pp. 126-142). V&V Editora.</li>
+      <li>Franco, M. M., Bandechi, J. M., Silva, T. M., Oliveira, P. R., & Silva, S. O. (2018). <a href="PDFs/Franco%20-%202019%20-%20Relato%20de%20Juliana%20Marques%20Bandechi%20Millena%20Miranda%20Franco.pdf" target="_blank">Relatos de experiências: Relato de Julhiana Marques Bandechi, Millena Miranda Franco, Paula Rabatone Oliveira, Stephanie Oliveira Silva e Thayane Miliano Silva</a>. In R. da Silva (Ed.), <span style="font-style: italic;">Didática no cárcere II - entender a natureza para entender o ser humano e seu mundo</span> (1st ed., pp. 119-121). Giostri Editora.</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Book Chapters</h2>
-          <ol style="margin-left: 40px;">
-            <li>Franco, M. M. (2024). Diálogo entre sombras. In Vários Autores (Ed.), <span style="font-style: italic;">O Livro Franciscano</span> (1st ed., pp. 49-50). Letras Amigas.</li>
-            <li>Franco, M. M., & Silva, L. S. (2021). Capítulo 15 - Os Conselhos Municipais de Direitos da Criança e do Adolescente no Brasil. In R. da Silva (Ed.), <span style="font-style: italic;">ECA 31 anos: nem a Pandemia nem o ódio podem matar nossos sonhos</span> (1st ed., pp. 131-144). Simplissimo.</li>
-            <li>Franco, M. M., Paiva, B. M., Osteti, G. R., Silva, N. R. P. da, Silva, B. H., Osteti, G. R., & Costa, P. S. R. (2021). As aproximações da pedagogia transformadora de Paulo Freire com a práxis coletiva de revista estudantil, comunitária e democrática. In C. C. Hardagh & L. Gamez (Eds.), <span style="font-style: italic;">Paulo Freire e a práxis pedagógica na contemporaneidade</span> (1st ed., pp. 126-142). V&V Editora.</li>
-            <li>Franco, M. M., Bandechi, J. M., Silva, T. M., Oliveira, P. R., & Silva, S. O. (2018). <a href="PDFs/Franco%20-%202019%20-%20Relato%20de%20Juliana%20Marques%20Bandechi%20Millena%20Miranda%20Franco.pdf" target="_blank">Relatos de experiências: Relato de Julhiana Marques Bandechi, Millena Miranda Franco, Paula Rabatone Oliveira, Stephanie Oliveira Silva e Thayane Miliano Silva</a>. In R. da Silva (Ed.), <span style="font-style: italic;">Didática no cárcere II - entender a natureza para entender o ser humano e seu mundo</span> (1st ed., pp. 119-121). Giostri Editora.</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Articles and Essays (Published, Peer-Reviewed)</h2>
+    <ol>
+      <li>Franco, M. M. (2021). <a href="https://doi.org/10.20888/ridpher.v7i00.16064" target="_blank">Apropriação das classes nouvelles francesas: experimentações educacionais brasileiras (1949-1969)</a>. <span style="font-style: italic;">RIDPHE_R Revista Iberoamericana do Patrimônio Histórico-Educativo</span>, 7, e021036-19.</li>
+      <li>Teixeira Miranda Franco, A. V., Ribeiro Arrudas, S., Oliveira Vasconcelos, V., Soares Rodrigues, V., Pimenta Cruz, J., dos Reis Zuba dos Santos, M., & Miranda Franco, M. (2026). <a href="https://doi.org/10.46551/ruc.v28n1a6" target="_blank">Tolerância das espécies Astronium urundeuva e Zinnia elegans em solos contaminados com chumbo</a>. <span style="font-style: italic;">Revista Unimontes Científica</span>, 28(1).</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Articles and Essays (Published, Peer-Reviewed)</h2>
-          <ol style="margin-left: 40px;">
-            <li>Franco, M. M. (2021). <a href="https://doi.org/10.20888/ridpher.v7i00.16064" target="_blank">Apropriação das classes nouvelles francesas: experimentações educacionais brasileiras (1949-1969)</a>. <span style="font-style: italic;">RIDPHE_R Revista Iberoamericana do Patrimônio Histórico-Educativo</span>, 7, e021036-19.</li>
-            <li>Teixeira Miranda Franco, A. V., Ribeiro Arrudas, S., Oliveira Vasconcelos, V., Soares Rodrigues, V., Pimenta Cruz, J., dos Reis Zuba dos Santos, M., & Miranda Franco, M. (2026). <a href="https://doi.org/10.46551/ruc.v28n1a6" target="_blank">Tolerância das espécies Astronium urundeuva e Zinnia elegans em solos contaminados com chumbo</a>. <span style="font-style: italic;">Revista Unimontes Científica</span>, 28(1).</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Conference Proceedings and Extended Abstracts (Peer-Reviewed)</h2>
+    <ol>
+      <li>Franco, M. M., & Neira, M. G. (2021). Historical record through minibiographies of retired professors: valuing and reconstructing the history of the School of Education of the University of São Paulo (Part 1). <span style="font-style: italic;">29º Simpósio Internacional de Iniciação Científica e Tecnológica da USP (SIICUSP)</span>.</li>
+      <li>Franco, M. M., & Moraes, C. S. V. (2020). Vocational teaching colleges for workers: A proposal for citizenship education. <span style="font-style: italic;">28º Simpósio Internacional de Iniciação Científica e Tecnológica da USP (SIICUSP)</span>.</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Conference Proceedings and Extended Abstracts (Peer-Reviewed)</h2>
-          <ol style="margin-left: 40px;">
-            <li>Franco, M. M., & Neira, M. G. (2021). Historical record through minibiographies of retired professors: valuing and reconstructing the history of the School of Education of the University of São Paulo (Part 1). <span style="font-style: italic;">29º Simpósio Internacional de Iniciação Científica e Tecnológica da USP (SIICUSP)</span>.</li>
-            <li>Franco, M. M., & Moraes, C. S. V. (2020). Vocational teaching colleges for workers: A proposal for citizenship education. <span style="font-style: italic;">28º Simpósio Internacional de Iniciação Científica e Tecnológica da USP (SIICUSP)</span>.</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Magazine and Newsletter Articles (Published, Not Peer-Reviewed)</h2>
+    <ol>
+      <li>Franco, M. M. (2020). Editors in conversation. <span style="font-style: italic;">Creative Network Magazine</span>, 5.</li>
+      <li>Franco, M. M. (2020). Personal experience coping with Covid-19. <span style="font-style: italic;">Creative Network Magazine</span>, 7-8.</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Magazine and Newsletter Articles (Published, Not Peer-Reviewed)</h2>
-          <ol style="margin-left: 40px;">
-            <li>Franco, M. M. (2020). Editors in conversation. <span style="font-style: italic;">Creative Network Magazine</span>, 5.</li>
-            <li>Franco, M. M. (2020). Personal experience coping with Covid-19. <span style="font-style: italic;">Creative Network Magazine</span>, 7-8.</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Forthcoming, Preprints, and Works in Preparation</h2>
+    <ol>
+      <li>Franco, A. V. T. M., Franco, M. M., & Franco, I. M. (2026). <a href="https://doi.org/10.21203/rs.3.rs-8757682/v1" target="_blank">Severe nickel stress constrains phenotypic plasticity and induces developmental canalisation in Catharanthus roseus</a>. <span style="font-style: italic;">Research Square (Springer Nature)</span>. Preprint.</li>
+      <li>Franco, A. V. T. M., Franco, M. M., & Franco, I. M. (2026). <a href="https://ssrn.com/abstract=6640058" target="_blank">Unequal sanitation in the Global South: infrastructure and governance shortfalls in northern Minas Gerais, Brazil</a>. <span style="font-style: italic;">Social Science Research Network</span>. Preprint.</li>
+      <li>Franco, M. M. (2026). Ideias para a organização de fontes históricas em Direito e Violência de Estado: documento nato-digital e digitalizado. In preparation.</li>
+      <li>Franco, M. M. (2026). Mapeamento de iniciativas de rememoração em torno do massacre do Carandiru, ocorrido em 02 de outubro de 1992. In preparation.</li>
+      <li>Franco, M. M. (2026). Prevenção, investigação e documentação nos protocolos de Minnesota e Istambul: a situação da memória e da história no combate a graves violações dos direitos humanos. In preparation.</li>
+      <li>Franco, M. M. (2026). As sombras da ditadura civil-militar por sobre a educação da classe trabalhadora brasileira: uma reflexão a partir dos microdados do INEP para a Educação Profissional e Tecnológica (2024). In preparation.</li>
+      <li>Franco, M. M. (2026). Political uses of adult literacy under civil-military dictatorships: material apparatus of domination and resistance of the working class in Brazil and Chile (1964-1990). In preparation.</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Forthcoming, Preprints, and Works in Preparation</h2>
-          <ol style="margin-left: 40px;">
-            <li>Franco, A. V. T. M., Franco, M. M., & Franco, I. M. (2026). <a href="https://doi.org/10.21203/rs.3.rs-8757682/v1" target="_blank">Severe nickel stress constrains phenotypic plasticity and induces developmental canalisation in Catharanthus roseus</a>. <span style="font-style: italic;">Research Square (Springer Nature)</span>. Preprint.</li>
-            <li>Franco, A. V. T. M., Franco, M. M., & Franco, I. M. (2026). <a href="https://ssrn.com/abstract=6640058" target="_blank">Unequal sanitation in the Global South: infrastructure and governance shortfalls in northern Minas Gerais, Brazil</a>. <span style="font-style: italic;">Social Science Research Network</span>. Preprint.</li>
-            <li>Franco, M. M. (2026). Ideias para a organização de fontes históricas em Direito e Violência de Estado: documento nato-digital e digitalizado. In preparation.</li>
-            <li>Franco, M. M. (2026). Mapeamento de iniciativas de rememoração em torno do massacre do Carandiru, ocorrido em 02 de outubro de 1992. In preparation.</li>
-            <li>Franco, M. M. (2026). Prevenção, investigação e documentação nos protocolos de Minnesota e Istambul: a situação da memória e da história no combate a graves violações dos direitos humanos. In preparation.</li>
-            <li>Franco, M. M. (2026). As sombras da ditadura civil-militar por sobre a educação da classe trabalhadora brasileira: uma reflexão a partir dos microdados do INEP para a Educação Profissional e Tecnológica (2024). In preparation.</li>
-            <li>Franco, M. M. (2026). Political uses of adult literacy under civil-military dictatorships: material apparatus of domination and resistance of the working class in Brazil and Chile (1964-1990). In preparation.</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Editorial Work</h2>
+    <ol>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2019, November)</a>. No. 1. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202019%20-%20Futuro%20do%20Preterito%20n1.pdf" target="_blank">PDF</a>. <a href="PDFs/Franco%20-%202019%20-%20Futuro%20do%20Preteritos%20editorial%20direction.pdf" target="_blank">Editorial direction</a>: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2020, March)</a>. No. 2. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n2.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2020, July)</a>. No. 3. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n3.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2020, November)</a>. No. 4. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n4.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2021, March)</a>. No. 5. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n5.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2021, July)</a>. No. 6. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202021%20-%20Futuro%20do%20Preterito%20n6.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2021, November)</a>. No. 7. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202021%20-%20Futuro%20do%20Preterito%20n7.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2022, March)</a>. No. 8. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202021%20-%20Futuro%20do%20Preterito%20n8.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2022, July)</a>. No. 9. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202022%20-%20Futuro%20do%20Preterito%20n9.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2022, November)</a>. No. 10. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202022%20-%20Futuro%20do%20Preterito%20n10.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><span style="font-style: italic;">Boletim InFormativo do PPGE-FEUSP</span> (Apr. to Jul. 2022). No.1. Retrieved from <a href="https://informativofeusp.my.canva.site/" target="_blank">https://informativofeusp.my.canva.site/</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><span style="font-style: italic;">Boletim InFormativo do PPGE-FEUSP</span> (Aug. to July 2022). No.1. Retrieved from <a href="https://informativofeusp.my.canva.site/" target="_blank">https://informativofeusp.my.canva.site/</a>. Editorial direction: Millena Miranda Franco.</li>
+      <li><span style="font-style: italic;">Boletim InFormativo do Centro de Memória da Educação</span> (Aug. 2022). Editorial direction: Millena Miranda Franco.</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Editorial Work</h2>
-          <ol style="margin-left: 40px;">
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2019, November)</a>. No. 1. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202019%20-%20Futuro%20do%20Preterito%20n1.pdf" target="_blank">PDF</a>. <a href="PDFs/Franco%20-%202019%20-%20Futuro%20do%20Preteritos%20editorial%20direction.pdf" target="_blank">Editorial direction</a>: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2020, March)</a>. No. 2. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n2.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2020, July)</a>. No. 3. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n3.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2020, November)</a>. No. 4. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n4.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2021, March)</a>. No. 5. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202020%20-%20Futuro%20do%20Preterito%20n5.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2021, July)</a>. No. 6. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202021%20-%20Futuro%20do%20Preterito%20n6.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2021, November)</a>. No. 7. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202021%20-%20Futuro%20do%20Preterito%20n7.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2022, March)</a>. No. 8. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202021%20-%20Futuro%20do%20Preterito%20n8.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2022, July)</a>. No. 9. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202022%20-%20Futuro%20do%20Preterito%20n9.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><a href="https://www4.fe.usp.br/futurodopreterito" target="_blank"><span style="font-style: italic;">Futuro do Pretérito</span>. (2022, November)</a>. No. 10. São Paulo: Faculdade de Educação da Universidade de São Paulo. ISSN 2675-455X. Retrieved from <a href="PDFs/Franco%20-%202022%20-%20Futuro%20do%20Preterito%20n10.pdf" target="_blank">PDF</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><span style="font-style: italic;">Boletim InFormativo do PPGE-FEUSP</span> (Apr. to Jul. 2022). No.1. Retrieved from <a href="https://informativofeusp.my.canva.site/" target="_blank">https://informativofeusp.my.canva.site/</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><span style="font-style: italic;">Boletim InFormativo do PPGE-FEUSP</span> (Aug. to July 2022). No.1. Retrieved from <a href="https://informativofeusp.my.canva.site/" target="_blank">https://informativofeusp.my.canva.site/</a>. Editorial direction: Millena Miranda Franco.</li>
-            <li><span style="font-style: italic;">Boletim InFormativo do Centro de Memória da Educação</span> (Aug. 2022). Editorial direction: Millena Miranda Franco.</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Awards & Scholarships</h2>
+    <ol>
+      <li>Erasmus+ Scholarship, European Commission (Exchange programme at the University of Potsdam) (2022).</li>
+      <li>1st Place & Honourable Mention in Humanities, <a href="https://www.youtube.com/watch?v=4x28U_cfvPU" target="_blank">Three Minutes of Thesis USP 2022 Video Award</a>. Dean of Graduate Studies, University of São Paulo (2022).</li>
+      <li>Honourable Mention for Undergraduate Research (SIICUSP), Dean of Research, University of São Paulo (2021).</li>
+      <li>TransFORMAR Project, Centro Universitário da Fundação Educacional Inaciana (2016).</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Awards & Scholarships</h2>
-          <ol style="margin-left: 40px;">
-            <li>Erasmus+ Scholarship, European Commission (Exchange programme at the University of Potsdam) (2022).</li>
-            <li>1st Place & Honourable Mention in Humanities, <a href="https://www.youtube.com/watch?v=4x28U_cfvPU" target="_blank">Three Minutes of Thesis USP 2022 Video Award</a>. Dean of Graduate Studies, University of São Paulo (2022).</li>
-            <li>Honourable Mention for Undergraduate Research (SIICUSP), Dean of Research, University of São Paulo (2021).</li>
-            <li>TransFORMAR Project, Centro Universitário da Fundação Educacional Inaciana (2016).</li>
-          </ol>
+    <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Software & Repositories</h2>
+    <ol>
+      <li>Franco, M. M. <a href="https://github.com/mmillenaa/arquivivo" target="_blank"><span style="font-style: italic;">Arquivivo</span></a>. 2026.</li>
+      <li>Franco, M. M. <a href="https://github.com/mmillenaa/inventory-and-statistics" target="_blank"><span style="font-style: italic;">Inventory and statistics of collections about state violence</span></a>. 2026.</li>
+      <li>Franco, M. M. <a href="https://github.com/mmillenaa/mnema" target="_blank"><span style="font-style: italic;">Mnema</span></a>. 2026.</li>
+      <li>Franco, M. M. <a href="https://github.com/mmillenaa/philosophy-of-law" target="_blank"><span style="font-style: italic;">Philosophy of law</span></a>. 2026.</li>
+    </ol>
 
-          <h2><img src="1.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 10px;">Software & Repositories</h2>
-          <ol style="margin-left: 40px;">
-            <li>Franco, M. M. <a href="https://github.com/mmillenaa/arquivivo" target="_blank"><span style="font-style: italic;">Arquivivo</span></a>. 2026.</li>
-            <li>Franco, M. M. <a href="https://github.com/mmillenaa/inventory-and-statistics" target="_blank"><span style="font-style: italic;">Inventory and statistics of collections about state violence</span></a>. 2026.</li>
-            <li>Franco, M. M. <a href="https://github.com/mmillenaa/mnema" target="_blank"><span style="font-style: italic;">Mnema</span></a>. 2026.</li>
-            <li>Franco, M. M. <a href="https://github.com/mmillenaa/philosophy-of-law" target="_blank"><span style="font-style: italic;">Philosophy of law</span></a>. 2026.</li>
-          </ol>
+    <div class="footer">
+      (c) Millena Miranda Franco <script>document.write(new Date().getFullYear());</script><br>
+      <a href="mailto:millena.franco@fgv.br">email</a>
+    </div>
 
-          <p class="MsoNormal" style="text-align: left;"><span lang="EN-GB"><br></span></p>
-
-        </td>
-      </tr>
-
-      <tr align="center">
-        <td style="vertical-align: top;">(c) Millena Miranda Franco
-          <script>document.write(new Date().getFullYear());</script><br>
-          <a href="mailto:millena.franco@fgv.br">email</a><br>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <span style="font-weight: bold;"></span><br>
-  <p class="MsoNormal" style="text-align: left;"><span style="" lang="EN-GB"></span></p>
-
+  </div>
 </body>
 </html>
