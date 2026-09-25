@@ -63,23 +63,13 @@
       justify-content: flex-start;
       gap: 30px;
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 30px; /* Aumentei um pouco a margem inferior já que removemos o separador */
     }
 
     .header-section img {
       max-width: 140px;
       height: auto;
       flex-shrink: 0;
-    }
-
-    .separator {
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    .separator img {
-      height: 25px;
-      width: auto;
     }
 
     .footer {
@@ -93,6 +83,7 @@
       margin-bottom: 40px;
       font-size: 14pt; 
       color: #333;
+      transition: opacity 0.5s ease-out; /* Adiciona a transição suave para a opacidade */
     }
 
     /* --- SISTEMA DE COLUNAS --- */
@@ -124,7 +115,7 @@
     }
 
     ul.blog-list li {
-      margin-bottom: 20px; /* Um pouco mais de espaço entre os itens para compensar a falta de bordas */
+      margin-bottom: 20px; 
     }
 
     /* Estilos minimalistas para o acordeão */
@@ -145,7 +136,7 @@
     }
 
     summary:hover {
-      color: #d73300; /* Indica que é clicável */
+      color: #d73300; 
     }
 
     summary::-webkit-details-marker {
@@ -190,11 +181,7 @@
       <h6>Blog / Thoughts</h6>
     </div>
     
-    <div class="separator">
-      <img src="3.png" alt="Separator">
-    </div>
-    
-    <p class="blog-intro">
+    <p class="blog-intro" id="intro-text">
       Welcome to my digital notebook. Here you will find short essays, research notes, and updates on my ongoing projects, organized by my main areas of investigation. You can also read more <a href="about.html" style="font-weight: 600;">about me</a>.
     </p>
 
@@ -203,7 +190,7 @@
 
       <!-- SEÇÃO 1 -->
       <div class="blog-section">
-        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Digital Humanities</h2>
+        <h2>Digital Humanities</h2>
         <ul class="blog-list">
           <li>
             <details>
@@ -228,7 +215,7 @@
 
       <!-- SEÇÃO 2 -->
       <div class="blog-section">
-        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">History of Education</h2>
+        <h2>History of Education</h2>
         <ul class="blog-list">
           <li>
             <details>
@@ -244,7 +231,7 @@
 
       <!-- SEÇÃO 3 -->
       <div class="blog-section">
-        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Law</h2>
+        <h2>Law</h2>
         <ul class="blog-list">
           <li>
             <details>
@@ -260,7 +247,7 @@
 
       <!-- SEÇÃO 4 -->
       <div class="blog-section">
-        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Public Policies</h2>
+        <h2>Public Policies</h2>
         <ul class="blog-list">
           <li>
             <details>
@@ -276,7 +263,7 @@
 
       <!-- SEÇÃO 5 -->
       <div class="blog-section">
-        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Teaching / Research</h2>
+        <h2>Teaching / Research</h2>
         <ul class="blog-list">
           <li>
             <details>
@@ -299,5 +286,24 @@
     </div>
 
   </div>
+
+  <script>
+    // Script para fazer o texto de introdução desaparecer ao rolar a página
+    window.addEventListener('scroll', function() {
+      const introText = document.getElementById('intro-text');
+      // Pega a posição da rolagem
+      const scrollPosition = window.scrollY;
+      
+      // Se a página for rolada mais de 50 pixels, o texto fica invisível
+      if (scrollPosition > 50) {
+        introText.style.opacity = '0';
+        introText.style.pointerEvents = 'none'; // Impede que o texto "invisível" seja clicado
+      } else {
+        // Volta a ficar visível se rolar para o topo
+        introText.style.opacity = '1';
+        introText.style.pointerEvents = 'auto'; 
+      }
+    });
+  </script>
 </body>
 </html>
