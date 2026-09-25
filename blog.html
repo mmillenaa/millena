@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Blog / Thoughts - Millena Miranda Franco</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="profilbild.png" />
+  
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 13pt;
+      font-family: "Source Sans Pro", sans-serif; 
+      background-color: #ffffff; 
+      color: #000000; 
+      text-align: left;
+      line-height: 26px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    a {
+      color: #d73300; 
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Press Start 2P', cursive;
+      font-weight: normal;
+      color: #2a1c0f; 
+    }
+    
+    h6 {
+      font-size: 31px; 
+      margin: 0;
+      letter-spacing: -1px; 
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px; 
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .header-section img {
+      max-width: 140px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .separator {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .separator img {
+      height: 25px;
+      width: auto;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 11pt;
+    }
+
+    .blog-intro {
+      margin-bottom: 40px;
+      font-size: 14pt; 
+      border-left: 3px solid #d73300;
+      padding-left: 15px;
+      color: #333;
+    }
+
+    /* --- SISTEMA DE GRID PARA AS SEÇÕES DO BLOG --- */
+    .blog-grid {
+      display: grid;
+      /* Cria até 3 colunas dinâmicas (mínimo 260px cada) */
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px 30px; /* 40px vertical, 30px horizontal */
+      align-items: start;
+    }
+
+    .blog-section h2 {
+      font-size: 12px; /* Reduzido levemente para caber nas colunas */
+      margin-top: 0;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    ul.blog-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: 0; /* Margem zero para aproveitar o espaço da coluna */
+      margin-top: 0;
+    }
+
+    ul.blog-list li {
+      margin-bottom: 15px;
+    }
+
+    /* Estilo do bloco de post expansível */
+    details {
+      background-color: #fcfcfc;
+      border: 1px solid #eaeaea;
+      border-left: 3px solid #ccc; 
+      padding: 12px;
+      border-radius: 4px;
+      transition: background-color 0.2s, border-left-color 0.2s;
+    }
+
+    details:hover {
+      background-color: #f7f7f7;
+      border-left-color: #d73300;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      outline: none;
+      list-style: none;
+      font-size: 12pt;
+      line-height: 1.3;
+    }
+
+    summary::-webkit-details-marker {
+      display: none; 
+    }
+
+    .details-content {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed #ccc;
+      font-size: 11pt;
+      line-height: 1.5;
+    }
+
+    .details-date {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 8px;
+      color: #666;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .details-links {
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 11pt;
+    }
+
+    @media (max-width: 600px) {
+      .header-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+      h6 {
+        font-size: 20px; 
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header-section">
+      <img src="profilbild.png" alt="Millena Miranda Franco">
+      <h6>Blog / Thoughts</h6>
+    </div>
+    
+    <div class="separator">
+      <img src="3.png" alt="Separator">
+    </div>
+    
+    <p class="blog-intro">
+      Welcome to my digital notebook. Here you will find short essays, research notes, and updates on my ongoing projects, organized by my main areas of investigation. You can also read more <a href="about.html" style="font-weight: 600;">about me</a>.
+    </p>
+
+    <!-- INÍCIO DO GRID DE COLUNAS -->
+    <div class="blog-grid">
+
+      <!-- SEÇÃO 1 -->
+      <div class="blog-section">
+        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Digital Humanities</h2>
+        <ul class="blog-list">
+          <li>
+            <details>
+                <summary>Notes on Born-Digital Archives and Memory</summary>
+                <div class="details-content">
+                  <span class="details-date">2026-09-15</span>
+                  Reflections on the challenges of preserving born-digital materials related to state violence. How do we curate the ephemerality of digital resistance?
+                  <div class="details-links">
+                    <a href="#">Read full text →</a>
+                  </div>
+                </div>
+            </details>
+          </li>
+          <li>
+            <details>
+                <summary>Building the Mnema 1.0 Architecture</summary>
+                <div class="details-content">
+                  <span class="details-date">2026-05-10</span>
+                  Technical and theoretical notes on the development of the Mnema software. Discussing metadata models for human rights violations archives.
+                  <div class="details-links">
+                    <a href="#">View repository</a> | <a href="#">Read post →</a>
+                  </div>
+                </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <!-- SEÇÃO 2 -->
+      <div class="blog-section">
+        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">History of Education</h2>
+        <ul class="blog-list">
+          <li>
+            <details>
+                <summary>The Evening Vocational Schools: A Retrospective</summary>
+                <div class="details-content">
+                  <span class="details-date">2026-08-01</span>
+                  A deep dive into the microdata and the lived experiences of adult workers pursuing citizenship education during the late 1960s in Brazil.
+                  <div class="details-links">
+                    <a href="#">Read post →</a>
+                  </div>
+                </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <!-- SEÇÃO 3 -->
+      <div class="blog-section">
+        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Law</h2>
+        <ul class="blog-list">
+          <li>
+            <details>
+                <summary>The Minnesota and Istanbul Protocols</summary>
+                <div class="details-content">
+                  <span class="details-date">2026-07-22</span>
+                  A look at how history and memory are situated within international protocols for investigating and documenting severe human rights violations.
+                  <div class="details-links">
+                    <a href="#">Read post →</a>
+                  </div>
+                </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <!-- SEÇÃO 4 -->
+      <div class="blog-section">
+        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Public Policies</h2>
+        <ul class="blog-list">
+          <li>
+            <details>
+                <summary>Infrastructure Shortfalls in the Global South</summary>
+                <div class="details-content">
+                  <span class="details-date">2026-03-12</span>
+                  Notes stemming from our recent publication on unequal sanitation and governance challenges in northern Minas Gerais.
+                  <div class="details-links">
+                    <a href="#">Read post →</a>
+                  </div>
+                </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <!-- SEÇÃO 5 -->
+      <div class="blog-section">
+        <h2><img src="1.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Teaching / Research</h2>
+        <ul class="blog-list">
+          <li>
+            <details>
+                <summary>FGV Direito SP: A Year in Review</summary>
+                <div class="details-content">
+                  <span class="details-date">2026-08-30</span>
+                  Concluding my time as a Visiting Researcher. Reflections on organizing documentary archives of state violence and the pedagogical lessons learned.
+                  <div class="details-links">
+                    <a href="#">Read post →</a>
+                  </div>
+                </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- FIM DO GRID DE COLUNAS -->
+
+    <div class="footer">
+      (c) Millena Miranda Franco <script>document.write(new Date().getFullYear());</script><br>
+      <a href="mailto:millena.franco@fgv.br">email</a>
+    </div>
+
+  </div>
+</body>
+</html>
