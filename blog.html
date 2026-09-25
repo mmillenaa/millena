@@ -286,24 +286,5 @@
     </div>
 
   </div>
-
-  <script>
-    // Script para fazer o texto de introdução desaparecer ao rolar a página
-    window.addEventListener('scroll', function() {
-      const introText = document.getElementById('intro-text');
-      // Pega a posição da rolagem
-      const scrollPosition = window.scrollY;
-      
-      // Se a página for rolada mais de 50 pixels, o texto fica invisível
-      if (scrollPosition > 50) {
-        introText.style.opacity = '0';
-        introText.style.pointerEvents = 'none'; // Impede que o texto "invisível" seja clicado
-      } else {
-        // Volta a ficar visível se rolar para o topo
-        introText.style.opacity = '1';
-        introText.style.pointerEvents = 'auto'; 
-      }
-    });
-  </script>
 </body>
 </html>
