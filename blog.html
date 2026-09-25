@@ -97,12 +97,18 @@
       color: #333;
     }
 
-    /* --- SISTEMA DE GRID PARA AS SEÇÕES DO BLOG --- */
+    /* --- SISTEMA DE COLUNAS (Substitui o Grid) --- */
     .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px 30px; 
-      align-items: start;
+      column-width: 260px; /* Cria colunas dinâmicas */
+      column-gap: 30px;    /* Espaço entre as colunas */
+    }
+
+    .blog-section {
+      break-inside: avoid; /* Evita que uma seção seja cortada ao meio entre colunas */
+      page-break-inside: avoid;
+      margin-bottom: 40px; /* Espaçamento vertical entre blocos */
+      display: inline-block; /* Ajuda a manter o bloco coeso */
+      width: 100%;
     }
 
     .blog-section h2 {
@@ -156,6 +162,8 @@
       border-top: 1px dashed #ccc;
       font-size: 11pt;
       line-height: 1.5;
+      color: #555;
+      font-style: italic; /* Dá um tom de rascunho/nota */
     }
 
     .details-date {
@@ -164,16 +172,7 @@
       color: #666;
       margin-bottom: 10px;
       display: block;
-    }
-
-    /* Alteração aqui: Empilhando os links com flex-direction column */
-    .details-links {
-      margin-top: 15px;
-      font-weight: 600;
-      font-size: 11pt;
-      display: flex;
-      flex-direction: column;
-      gap: 5px; /* Espaço entre um link e outro */
+      font-style: normal;
     }
 
     @media (max-width: 600px) {
@@ -214,26 +213,19 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>Notes on Born-Digital Archives and Memory</summary>
+                <summary>Work in Progress: Born-Digital Archives</summary>
                 <div class="details-content">
-                  <span class="details-date">2026-09-15</span>
-                  Reflections on the challenges of preserving born-digital materials related to state violence. How do we curate the ephemerality of digital resistance?
-                  <div class="details-links">
-                    <a href="#">Read full text</a>
-                  </div>
+                  <span class="details-date">Forthcoming</span>
+                  Ipso facto. This section is currently under development. Initial notes and methodological outlines regarding the preservation of ephemeral digital resistance will be published here soon.
                 </div>
             </details>
           </li>
           <li>
             <details>
-                <summary>Building the Mnema 1.0 Architecture</summary>
+                <summary>Work in Progress: Mnema Architecture</summary>
                 <div class="details-content">
-                  <span class="details-date">2026-05-10</span>
-                  Technical and theoretical notes on the development of the Mnema software. Discussing metadata models for human rights violations archives.
-                  <div class="details-links">
-                    <a href="#">View repository</a>
-                    <a href="#">Read post</a>
-                  </div>
+                  <span class="details-date">Forthcoming</span>
+                  Ipso facto. Research notes documenting the development logic and metadata structures of the Mnema 1.0 software are being drafted.
                 </div>
             </details>
           </li>
@@ -246,13 +238,10 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>The Evening Vocational Schools: A Retrospective</summary>
+                <summary>Work in Progress: Vocational Schools</summary>
                 <div class="details-content">
-                  <span class="details-date">2026-08-01</span>
-                  A deep dive into the microdata and the lived experiences of adult workers pursuing citizenship education during the late 1960s in Brazil.
-                  <div class="details-links">
-                    <a href="#">Read post</a>
-                  </div>
+                  <span class="details-date">Forthcoming</span>
+                  Ipso facto. Upcoming essays exploring the microdata and pedagogical impact of evening vocational schools during the civil-military dictatorship.
                 </div>
             </details>
           </li>
@@ -265,13 +254,10 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>The Minnesota and Istanbul Protocols</summary>
+                <summary>Work in Progress: Investigating Violations</summary>
                 <div class="details-content">
-                  <span class="details-date">2026-07-22</span>
-                  A look at how history and memory are situated within international protocols for investigating and documenting severe human rights violations.
-                  <div class="details-links">
-                    <a href="#">Read post</a>
-                  </div>
+                  <span class="details-date">Forthcoming</span>
+                  Ipso facto. A critical review of the Minnesota and Istanbul Protocols is currently underway. Observations will be posted in due course.
                 </div>
             </details>
           </li>
@@ -284,13 +270,10 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>Infrastructure Shortfalls in the Global South</summary>
+                <summary>Work in Progress: Infrastructure Shortfalls</summary>
                 <div class="details-content">
-                  <span class="details-date">2026-03-12</span>
-                  Notes stemming from our recent publication on unequal sanitation and governance challenges in northern Minas Gerais.
-                  <div class="details-links">
-                    <a href="#">Read post</a>
-                  </div>
+                  <span class="details-date">Forthcoming</span>
+                  Ipso facto. Notes and supplementary data visualizations regarding sanitation and governance challenges in the Global South.
                 </div>
             </details>
           </li>
@@ -303,13 +286,10 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>FGV Direito SP: A Year in Review</summary>
+                <summary>Work in Progress: Archival Pedagogy</summary>
                 <div class="details-content">
-                  <span class="details-date">2026-08-30</span>
-                  Concluding my time as a Visiting Researcher. Reflections on organizing documentary archives of state violence and the pedagogical lessons learned.
-                  <div class="details-links">
-                    <a href="#">Read post</a>
-                  </div>
+                  <span class="details-date">Forthcoming</span>
+                  Ipso facto. Reflections on the organization of documentary archives and the intersection of research and teaching practices at FGV Direito SP.
                 </div>
             </details>
           </li>
