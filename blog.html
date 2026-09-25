@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Blog - Millena Miranda Franco </title>
+  <title>Blog / Thoughts - Millena Miranda Franco</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,14 +100,13 @@
     /* --- SISTEMA DE GRID PARA AS SEÇÕES DO BLOG --- */
     .blog-grid {
       display: grid;
-      /* Cria até 3 colunas dinâmicas (mínimo 260px cada) */
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px 30px; /* 40px vertical, 30px horizontal */
+      gap: 40px 30px; 
       align-items: start;
     }
 
     .blog-section h2 {
-      font-size: 12px; /* Reduzido levemente para caber nas colunas */
+      font-size: 12px; 
       margin-top: 0;
       margin-bottom: 15px;
       line-height: 1.4;
@@ -116,7 +115,7 @@
     ul.blog-list {
       list-style-type: none;
       padding-left: 0;
-      margin-left: 0; /* Margem zero para aproveitar o espaço da coluna */
+      margin-left: 0; 
       margin-top: 0;
     }
 
@@ -124,7 +123,6 @@
       margin-bottom: 15px;
     }
 
-    /* Estilo do bloco de post expansível */
     details {
       background-color: #fcfcfc;
       border: 1px solid #eaeaea;
@@ -168,10 +166,14 @@
       display: block;
     }
 
+    /* Alteração aqui: Empilhando os links com flex-direction column */
     .details-links {
-      margin-top: 12px;
+      margin-top: 15px;
       font-weight: 600;
       font-size: 11pt;
+      display: flex;
+      flex-direction: column;
+      gap: 5px; /* Espaço entre um link e outro */
     }
 
     @media (max-width: 600px) {
@@ -217,7 +219,7 @@
                   <span class="details-date">2026-09-15</span>
                   Reflections on the challenges of preserving born-digital materials related to state violence. How do we curate the ephemerality of digital resistance?
                   <div class="details-links">
-                    <a href="#">Read full text →</a>
+                    <a href="#">Read full text</a>
                   </div>
                 </div>
             </details>
@@ -229,7 +231,8 @@
                   <span class="details-date">2026-05-10</span>
                   Technical and theoretical notes on the development of the Mnema software. Discussing metadata models for human rights violations archives.
                   <div class="details-links">
-                    <a href="#">View repository</a> | <a href="#">Read post →</a>
+                    <a href="#">View repository</a>
+                    <a href="#">Read post</a>
                   </div>
                 </div>
             </details>
@@ -248,7 +251,7 @@
                   <span class="details-date">2026-08-01</span>
                   A deep dive into the microdata and the lived experiences of adult workers pursuing citizenship education during the late 1960s in Brazil.
                   <div class="details-links">
-                    <a href="#">Read post →</a>
+                    <a href="#">Read post</a>
                   </div>
                 </div>
             </details>
@@ -267,7 +270,7 @@
                   <span class="details-date">2026-07-22</span>
                   A look at how history and memory are situated within international protocols for investigating and documenting severe human rights violations.
                   <div class="details-links">
-                    <a href="#">Read post →</a>
+                    <a href="#">Read post</a>
                   </div>
                 </div>
             </details>
@@ -286,7 +289,7 @@
                   <span class="details-date">2026-03-12</span>
                   Notes stemming from our recent publication on unequal sanitation and governance challenges in northern Minas Gerais.
                   <div class="details-links">
-                    <a href="#">Read post →</a>
+                    <a href="#">Read post</a>
                   </div>
                 </div>
             </details>
@@ -305,7 +308,7 @@
                   <span class="details-date">2026-08-30</span>
                   Concluding my time as a Visiting Researcher. Reflections on organizing documentary archives of state violence and the pedagogical lessons learned.
                   <div class="details-links">
-                    <a href="#">Read post →</a>
+                    <a href="#">Read post</a>
                   </div>
                 </div>
             </details>
