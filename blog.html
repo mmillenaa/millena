@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Blog / Thoughts - Millena Miranda Franco</title>
+  <title>Millena Miranda Franco's Blog</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,22 +92,20 @@
     .blog-intro {
       margin-bottom: 40px;
       font-size: 14pt; 
-      border-left: 3px solid #d73300;
-      padding-left: 15px;
       color: #333;
     }
 
-    /* --- SISTEMA DE COLUNAS (Substitui o Grid) --- */
+    /* --- SISTEMA DE COLUNAS --- */
     .blog-grid {
-      column-width: 260px; /* Cria colunas dinâmicas */
-      column-gap: 30px;    /* Espaço entre as colunas */
+      column-width: 260px; 
+      column-gap: 30px;    
     }
 
     .blog-section {
-      break-inside: avoid; /* Evita que uma seção seja cortada ao meio entre colunas */
+      break-inside: avoid; 
       page-break-inside: avoid;
-      margin-bottom: 40px; /* Espaçamento vertical entre blocos */
-      display: inline-block; /* Ajuda a manter o bloco coeso */
+      margin-bottom: 40px; 
+      display: inline-block; 
       width: 100%;
     }
 
@@ -126,21 +124,14 @@
     }
 
     ul.blog-list li {
-      margin-bottom: 15px;
+      margin-bottom: 20px; /* Um pouco mais de espaço entre os itens para compensar a falta de bordas */
     }
 
+    /* Estilos minimalistas para o acordeão */
     details {
-      background-color: #fcfcfc;
-      border: 1px solid #eaeaea;
-      border-left: 3px solid #ccc; 
-      padding: 12px;
-      border-radius: 4px;
-      transition: background-color 0.2s, border-left-color 0.2s;
-    }
-
-    details:hover {
-      background-color: #f7f7f7;
-      border-left-color: #d73300;
+      background-color: transparent;
+      border: none;
+      padding: 0;
     }
 
     summary {
@@ -150,6 +141,11 @@
       list-style: none;
       font-size: 12pt;
       line-height: 1.3;
+      transition: color 0.2s;
+    }
+
+    summary:hover {
+      color: #d73300; /* Indica que é clicável */
     }
 
     summary::-webkit-details-marker {
@@ -157,13 +153,11 @@
     }
 
     .details-content {
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px dashed #ccc;
+      margin-top: 8px;
       font-size: 11pt;
       line-height: 1.5;
       color: #555;
-      font-style: italic; /* Dá um tom de rascunho/nota */
+      font-style: italic; 
     }
 
     .details-date {
