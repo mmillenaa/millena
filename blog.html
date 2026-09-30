@@ -265,16 +265,19 @@
       <div class="blog-section">
         <h2><img src="education.png" alt="" style="height: 16px; vertical-align: middle; margin-right: 8px;">Teaching / Research</h2>
         <ul class="blog-list">
-          <li>
-            <details>
-                <summary>Work in Progress: Archival Pedagogy</summary>
-                <div class="details-content">
-                  <span class="details-date">Forthcoming</span>
-                  Ipso facto. Reflections on the organization of documentary archives and the intersection of research and teaching practices at FGV Direito SP.
-                </div>
-            </details>
-          </li>
-        </ul>
+  {% for post in site.posts %}
+  <li>
+    <details>
+        <summary>{{ post.title }}</summary>
+        <div class="details-content">
+          <span class="details-date">{{ post.date | date: "%B %Y" }}</span>
+          {{ post.description }}<br><br>
+          <a href="{{ site.baseurl }}{{ post.url }}" style="font-weight: 600;">Leia o artigo completo aqui →</a>
+        </div>
+    </details>
+  </li>
+  {% endfor %}
+</ul>
       </div>
 
     </div>
