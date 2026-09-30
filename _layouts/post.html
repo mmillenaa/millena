@@ -2,23 +2,45 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - Millena Miranda Franco</title>
-  <style>
-    @font-face {
-      font-family: 'BitPotion';
-      src: url('BitPotion.ttf') format('truetype');
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style type="text/css">
+    body {
+      font-size: 13pt;
+      font-family: "Source Sans Pro", sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 26px;
+      margin: 0;
+      padding: 0;
     }
+    a { color: #d73300; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h6 {
+      font-family: 'Press Start 2P', cursive;
+      font-weight: normal;
+      font-size: 31px;
+      color: #2a1c0f;
+      margin: 0;
+      letter-spacing: -1px;
+    }
+    .container { max-width: 900px; width: 100%; margin: 0 auto; padding: 20px; }
+    .post-content { margin-top: 30px; }
+    .nav-links { margin-top: 40px; }
+    @media (max-width: 600px) { h6 { font-size: 20px; } }
   </style>
 </head>
 <body>
   <div class="container">
     <h6>{{ page.title }}</h6>
-    
-    <!-- O {{ content }} injetará tudo o que você escrever e as imagens que adicionar no painel -->
+
     <div class="post-content">
       {{ content }}
     </div>
-    
+
     <div class="nav-links">
       <a href="blog.html">Back to Blog</a>
     </div>
