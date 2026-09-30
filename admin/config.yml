@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images" # Pasta onde o painel vai salvar suas imagens
+public_folder: "/images"
+
+collections:
+  - name: "research"
+    label: "Teaching & Research"
+    folder: "_posts" # Pasta onde o GitHub espera encontrar os textos
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Resumo (Aparece no Acordeão)", name: "description", widget: "text"}
+      - {label: "Corpo do Texto", name: "body", widget: "markdown"}
