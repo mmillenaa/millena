@@ -5,57 +5,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Memorize by Millena Miranda Franco</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  
+
   <link rel="icon" href="profilbild.png" />
-  
+
   <style type="text/css">
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       font-size: 13pt;
-      font-family: "Source Sans Pro", sans-serif; 
-      background-color: #ffffff; 
-      color: #000000; 
+      font-family: "Source Sans Pro", sans-serif;
+      background-color: #ffffff;
+      color: #000000;
       text-align: left;
       line-height: 26px;
       margin: 0;
       padding: 0;
     }
-    
-    a {
-      color: #d73300; 
-      text-decoration: none;
-    }
-    
-    a:hover {
-      text-decoration: underline;
-    }
+
+    a { color: #d73300; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Press Start 2P', cursive;
       font-weight: normal;
-      color: #2a1c0f; 
+      color: #2a1c0f;
     }
-    
-    h6 {
-      font-size: 31px; 
-      margin: 0;
-      letter-spacing: -1px; 
-    }
+
+    h6 { font-size: 31px; margin: 0; letter-spacing: -1px; }
 
     .container {
       max-width: 900px;
       width: 100%;
       margin: 0 auto;
-      padding: 20px; 
+      padding: 20px;
     }
 
     .header-section {
@@ -64,67 +52,41 @@
       justify-content: flex-start;
       gap: 30px;
       margin-top: 20px;
-      margin-bottom: 30px; 
-    }
-
-    .header-section img {
-      max-width: 140px;
-      height: auto;
-      flex-shrink: 0;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 50px;
       margin-bottom: 30px;
-      font-size: 11pt;
     }
+
+    .header-section img { max-width: 140px; height: auto; flex-shrink: 0; }
+
+    .footer { text-align: center; margin-top: 50px; margin-bottom: 30px; font-size: 11pt; }
 
     .blog-intro {
       margin-bottom: 40px;
-      font-size: 14pt; 
+      font-size: 14pt;
       color: #333;
-      transition: opacity 0.5s ease-out; 
+      transition: opacity 0.5s ease-out;
     }
 
-    /* --- SISTEMA DE COLUNAS --- */
-    .blog-grid {
-      column-width: 260px; 
-      column-gap: 30px;    
-    }
+    .blog-grid { column-width: 260px; column-gap: 30px; }
 
     .blog-section {
-      break-inside: avoid; 
+      break-inside: avoid;
       page-break-inside: avoid;
-      margin-bottom: 40px; 
-      display: inline-block; 
+      margin-bottom: 40px;
+      display: inline-block;
       width: 100%;
     }
 
     .blog-section h2 {
-      font-size: 12px; 
+      font-size: 12px;
       margin-top: 0;
       margin-bottom: 15px;
       line-height: 1.4;
     }
 
-    ul.blog-list {
-      list-style-type: none;
-      padding-left: 0;
-      margin-left: 0; 
-      margin-top: 0;
-    }
+    ul.blog-list { list-style-type: none; padding-left: 0; margin: 0; }
+    ul.blog-list li { margin-bottom: 20px; }
 
-    ul.blog-list li {
-      margin-bottom: 20px; 
-    }
-
-    /* Estilos minimalistas para o acordeão */
-    details {
-      background-color: transparent;
-      border: none;
-      padding: 0;
-    }
+    details { background-color: transparent; border: none; padding: 0; }
 
     summary {
       cursor: pointer;
@@ -136,20 +98,15 @@
       transition: color 0.2s;
     }
 
-    summary:hover {
-      color: #d73300; 
-    }
-
-    summary::-webkit-details-marker {
-      display: none; 
-    }
+    summary:hover { color: #d73300; }
+    summary::-webkit-details-marker { display: none; }
 
     .details-content {
       margin-top: 8px;
       font-size: 11pt;
       line-height: 1.5;
       color: #555;
-      font-style: italic; 
+      font-style: italic;
     }
 
     .details-date {
@@ -162,14 +119,8 @@
     }
 
     @media (max-width: 600px) {
-      .header-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-      }
-      h6 {
-        font-size: 20px; 
-      }
+      .header-section { flex-direction: column; text-align: center; gap: 15px; }
+      h6 { font-size: 20px; }
     }
   </style>
 </head>
@@ -181,12 +132,11 @@
       <img src="profilbild.png" alt="Millena Miranda Franco">
       <h6>Memorize</h6>
     </div>
-    
+
     <p class="blog-intro" id="intro-text">
       Welcome to my blog. My name is Millena Miranda Franco, and here you will find short essays, research notes, and updates on my ongoing projects, organized by my main areas of investigation. You can also read more <a href="about.html" style="font-weight: 600;">about me</a>.
     </p>
 
-    <!-- INÍCIO DO GRID DE COLUNAS -->
     <div class="blog-grid">
 
       <!-- SEÇÃO 1 -->
@@ -195,20 +145,20 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>Work in Progress: Born-Digital Archives</summary>
-                <div class="details-content">
-                  <span class="details-date">Forthcoming</span>
-                  Ipso facto. This section is currently under development. Initial notes and methodological outlines regarding the preservation of ephemeral digital resistance will be published here soon.
-                </div>
+              <summary>Work in Progress: Born-Digital Archives</summary>
+              <div class="details-content">
+                <span class="details-date">Forthcoming</span>
+                Ipso facto. This section is currently under development. Initial notes and methodological outlines regarding the preservation of ephemeral digital resistance will be published here soon.
+              </div>
             </details>
           </li>
           <li>
             <details>
-                <summary>Work in Progress: Mnema Architecture</summary>
-                <div class="details-content">
-                  <span class="details-date">Forthcoming</span>
-                  Ipso facto. Research notes documenting the development logic and metadata structures of the Mnema 1.0 software are being drafted.
-                </div>
+              <summary>Work in Progress: Mnema Architecture</summary>
+              <div class="details-content">
+                <span class="details-date">Forthcoming</span>
+                Ipso facto. Research notes documenting the development logic and metadata structures of the Mnema 1.0 software are being drafted.
+              </div>
             </details>
           </li>
         </ul>
@@ -220,11 +170,11 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>Work in Progress: Vocational Schools</summary>
-                <div class="details-content">
-                  <span class="details-date">Forthcoming</span>
-                  Ipso facto. Upcoming essays exploring the microdata and pedagogical impact of evening vocational schools during the civil-military dictatorship.
-                </div>
+              <summary>Work in Progress: Vocational Schools</summary>
+              <div class="details-content">
+                <span class="details-date">Forthcoming</span>
+                Ipso facto. Upcoming essays exploring the microdata and pedagogical impact of evening vocational schools during the civil-military dictatorship.
+              </div>
             </details>
           </li>
         </ul>
@@ -236,11 +186,11 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>Work in Progress: Investigating Violations</summary>
-                <div class="details-content">
-                  <span class="details-date">Forthcoming</span>
-                  Ipso facto. A critical review of the Minnesota and Istanbul Protocols is currently underway. Observations will be posted in due course.
-                </div>
+              <summary>Work in Progress: Investigating Violations</summary>
+              <div class="details-content">
+                <span class="details-date">Forthcoming</span>
+                Ipso facto. A critical review of the Minnesota and Istanbul Protocols is currently underway. Observations will be posted in due course.
+              </div>
             </details>
           </li>
         </ul>
@@ -252,11 +202,11 @@
         <ul class="blog-list">
           <li>
             <details>
-                <summary>Work in Progress: Infrastructure Shortfalls</summary>
-                <div class="details-content">
-                  <span class="details-date">Forthcoming</span>
-                  Ipso facto. Notes and supplementary data visualizations regarding sanitation and governance challenges in the Global South.
-                </div>
+              <summary>Work in Progress: Infrastructure Shortfalls</summary>
+              <div class="details-content">
+                <span class="details-date">Forthcoming</span>
+                Ipso facto. Notes and supplementary data visualizations regarding sanitation and governance challenges in the Global South.
+              </div>
             </details>
           </li>
         </ul>
@@ -266,23 +216,22 @@
       <div class="blog-section">
         <h2>Teaching / Research</h2>
         <ul class="blog-list">
-  {% for post in site.posts %}
-  <li>
-    <details>
-        <summary>{{ post.title }}</summary>
-        <div class="details-content">
-          <span class="details-date">{{ post.date | date: "%B %Y" }}</span>
-          {{ post.description }}<br><br>
-          <a href="/millena{{ post.url }}" style="font-weight: 600;">Leia o artigo completo aqui</a>
-        </div>
-    </details>
-  </li>
-  {% endfor %}
-</ul>
+          {% for post in site.posts %}
+          <li>
+            <details>
+              <summary>{{ post.title }}</summary>
+              <div class="details-content">
+                <span class="details-date">{{ post.date | date: "%B %Y" }}</span>
+                {{ post.description }}<br><br>
+                <a href="{{ site.baseurl }}{{ post.url }}" style="font-weight: 600;">Leia o artigo completo aqui</a>
+              </div>
+            </details>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
 
     </div>
-    <!-- FIM DO GRID DE COLUNAS -->
 
     <div class="footer">
       (c) Millena Miranda Franco <script>document.write(new Date().getFullYear());</script><br>
