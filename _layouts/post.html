@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} - Millena Miranda Franco</title>
+@font-face {
+  font-family: 'BitPotion';
+  src: url('BitPotion.ttf') format('truetype');
+}
+</head>
+<body>
+  <div class="container">
+    <h6>{{ page.title }}</h6>
+    
+    <!-- O {{ content }} injetará tudo o que você escrever e as imagens que adicionar no painel -->
+    <div class="post-content">
+      {{ content }}
+    </div>
+    
+    <div class="nav-links">
+      <a href="blog.html">← Back to Blog</a>
+    </div>
+  </div>
+</body>
+</html>
