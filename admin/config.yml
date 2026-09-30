@@ -1,14 +1,15 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mmillenaa/millena
   branch: main
 
-media_folder: "images" # Pasta onde o painel vai salvar suas imagens
+media_folder: "images"
 public_folder: "/images"
 
 collections:
   - name: "research"
     label: "Teaching & Research"
-    folder: "_posts" # Pasta onde o GitHub espera encontrar os textos
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
