@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you reference this portfolio or its contents, please cite it as below."
+type: software
+title: "Millena Miranda Franco - Curriculum Vitae and Portfolio"
+abstract: >-
+  This repository contains the curriculum vitae, academic publications, editorial work,
+  technical productions, and software projects of Millena Miranda Franco. It serves as
+  a consolidated digital record of contributions in research, teaching, digital humanities,
+  and open-source tools developed for archival science and education.
+authors:
+  - family-names: "Franco"
+    given-names: "Millena Miranda"
+    affiliation: "Universidade de São Paulo (USP)"
+url: "https://mmillenaa.github.io/millena/"
+license: CC-BY-NC-SA-4.0
+date-released: "2026-10-09"
+keywords:
+  - digital humanities
+  - curriculum vitae
+  - academic portfolio
+  - archival science
+  - history of education
