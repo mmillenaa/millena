@@ -1,20 +1,60 @@
+
 backend:
   name: github
   repo: mmillenaa/millena
   branch: main
 
+publish_mode: editorial_workflow
+
+site_url: "https://mmillenaa.github.io/millena/"
+
 media_folder: "images"
-public_folder: "/images"
+public_folder: "/millena/images"
 
 collections:
-  - name: "research"
-    label: "Teaching & Research"
+  - name: "posts"
+    label: "Memorize"
+    label_singular: "Artigo"
     folder: "_posts"
     create: true
+    extension: "md"
+    format: "frontmatter"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Resumo (Aparece no Acordeão)", name: "description", widget: "text"}
-      - {label: "Corpo do Texto", name: "body", widget: "markdown"}
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+
+      - label: "Título"
+        name: "title"
+        widget: "string"
+
+      - label: "Data"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Categoria"
+        name: "category"
+        widget: "select"
+        options:
+          - label: "Digital Humanities"
+            value: "digital-humanities"
+          - label: "History of Education"
+            value: "history-of-education"
+          - label: "Law"
+            value: "law"
+          - label: "Public Policies"
+            value: "public-policies"
+          - label: "Teaching / Research"
+            value: "teaching-research"
+
+      - label: "Resumo"
+        name: "description"
+        widget: "text"
+
+      - label: "Texto"
+        name: "body"
+        widget: "richtext"
+        format: "markdown"
